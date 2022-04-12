@@ -1,0 +1,44 @@
+<html>
+  <head>
+	  <link rel="stylesheet" href="Style.css" type="text/css">
+	  <title>
+		How to use Git?
+	  </title>
+	  <style>
+		p{font-size:18px;margin-left:50px;}
+		ul{font-size:18px;}
+		h1,h2{font-size:25px;}
+	  </style>
+  </head>
+  <body>
+    <h1 style=text-align:center;font-size:35px;> How to use Git </h1>
+    <h2 style=margin-left:50px;> Step 1 : Install Git </h2>
+    <p style=margin-left:50px;> Install Git and run git.exe file </p>
+	<h2 style=margin-left:50px;> Step 2 : Create a Repository And Commit </h2>
+	<ul style=margin-left:50px;><li>Navigate to your home (~) directory.</li>
+	<li>Create a directory to contain your repositories.</li>
+	<li>From the terminal, update the directory you want to work in to your new repos directory.</li>
+	<li>Now clone your repository by using command <b>git clone [clone link]</b></li>
+	<li>Now you have your repo directory on your machine. Now you have to set up your username and
+password for git. For this purpose, type these commands:
+<ul><li>git config --global user.name "your name"</li>
+<li>git config --global user.email "your university email"</li></ul>
+	<li>Make files you want to upload in repository.</li>
+	<li>First your file will be sent to the staging area by using git command <b>git add</b>, then from staging
+area it is sent to local repository by using <b>git commit</b>, and then from local repository to online
+or remote repository on github.</li>
+	<li>Type this in command line to add your files in staging area:
+<ul><li><b>git add --all</b> (if you want to send all of your files to staging area)</li>
+<li><b>git add filename</b> (if you want to send a specific file to staging area)</li></ul>
+	<li>Type in the command line to now commit your files and add them into the local repository. It
+will add all of the files which are in the staging area to the local repository.
+<ul><li><b> git commit -m “message you want to attach with this commit</b></li></ul></li>
+	<li>Now to add the files which are in the local repository to the remote repository use this
+command. This command will add your files to your github repository
+ <ul><li><b>git push origin master</b></li></ul>
+</li></ul></p>
+<form method="get" action="use_github.html" style=text-align:center;>
+		<input type="submit" value="Next" style="border-radius: 4in; width: 120px; height:30px; font-weight:bold">
+	</form>
+  </body>
+</html>
